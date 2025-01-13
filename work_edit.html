@@ -1,26 +1,40 @@
 <!DOCTYPE html> 
-<html>
+<html lan="ko">
 
 <head>
-    <title>Editing Work</title>
     <meta charset=":utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaein's Wise Idle Life</title>
+    <style>
+        ol li 
+        {
+          line-height: 3; /* 행간 설정 */
+        }
+    </style>
 </head>
 
 <!-- 
     <!DOCTYPE html>, <html> : 이 문서 html이다! 이제 시작한다!
     <head> : 본문을 설명해주고 설정해주는 코드가 배치
-    <body> : 본문의 직접적인 내용이 해당
         <title> 을 사용하면 웹에서 표지와 같이 인식된다
-        utf-8 을 사용하면 한글이 깨지지 않게 표기할 수 있다
+        문자표기: utf-8 _ 한글이 깨지지 않게 표기할 수 있다
+        Meta Viewport로 설정 : 사용자 디바이스의 폭에 맞추고, 비율을 1대1로 설정함
+            필수 설정값이라고 함
  -->
 
 <body style="margin-left: 15px">
-    <h1><a href="index.html">한재인의 백수 생활</a></h1>
-    <ol>
-        <li><a href="time_table.html">생활 계획표</a></li>
-        <li><a href="work_edit.html">편집 업무</a></li>
-        <li><a href="daily_quest.html">일일 업무</a></li>
-    </ol> 
+    <a href="index.html" title="Jaein's Wise Idle Life"><img src="main_title.png"></a>
+
+    <div style="display: flex;">
+        <!-- 좌측 카테고리 박스 관련 설정 -->
+        <div style="width: 150px; background-color: #e7e2db; padding: 10px; padding-top: 30px;">
+            <h3>카테고리</h3>
+            <ol style="list-style-type:none; padding: 0;">
+                <li><a href="time_table.html">생활 계획표</a></li>
+                <li><a href="work_edit.html">드로마 편집 업무</a></li>
+                <li><a href="daily_quest.html">일일 업무 체크리스트</a></li>
+            </ol> 
+        </div>
 
     <!-- 
         <li> 태그의 부모 태그는 <ul> 태그이며, 이는 리스트의 그룹을 구분한다
@@ -30,34 +44,30 @@
         
             오늘의 꿀팁 : cmd 를 누르고 여러곳을 클릭하면 동시에 내용을 입력할 수 있다
     -->
+        <!-- 우측 본문 박스 관련 설정 -->
+        <div style="flex:1; padding: 25px; padding-top: 10px;">
+            <h2 style="margin-top: 35px;">드로마 편집 업무</h2>
+            <img src="img_work_edit.webp" width="250"><br>
 
-    <h2>드로마 편집 업무</h2>
+            <br>
+            <p style="margin-top: 10px"><h3>야스오카 
+            (<a href="https://docs.google.com/spreadsheets/d/1co0TCwpc8Egaiz8IMtrpQNMQZYL6fdYQFLmg8q5S6fI/edit?gid=780180417#gid=780180417&range=D:G" target="_blank" title="google sheets"> 구글시트</a> / 
+            <a href="https://www.dropbox.com/scl/fo/dlkupppidj54skh7l49kl/AL-8nyVegOCAOHFRf-Wu0O8?rlkey=cbfktq12vr7pcrfgtb0vyyjl4&st=hot9awk0&dl=0" target="_blank" title="dropbox link">드롭박스 </a>)</h3></p>
+            <strong>01/13</strong>  1차 납기<br>
+            <strong>01/14</strong>  최종 인코딩본
 
-    <img src="img_time_table.webp" width="330"><br>
-
-    <!-- 
-        <img> 태그 안에
-        src="" 이미지 파일명을 기입
-        width="" 숫자, 혹은 % 기입하여 이미지 크기 조절
-    -->
-
-    <br>
-    <p style="margin-top: 10px"><h3><strong>야스오카 
-        (<a href="https://docs.google.com/spreadsheets/d/1co0TCwpc8Egaiz8IMtrpQNMQZYL6fdYQFLmg8q5S6fI/edit?gid=780180417#gid=780180417&range=D:G" target="_blank" title="google sheets"> 구글시트</a> / 
-        <a href="https://www.dropbox.com/scl/fo/dlkupppidj54skh7l49kl/AL-8nyVegOCAOHFRf-Wu0O8?rlkey=cbfktq12vr7pcrfgtb0vyyjl4&st=hot9awk0&dl=0" target="_blank" title="dropbox link">드롭박스 </a>)</h3></p>
-      <strong>01/13</strong>  1차 납기<br>
-      <strong>01/14</strong>  최종 인코딩본
-
-    <p style="margin-top: 30px;"><h3><strong>히로세 
-        (<a href="https://docs.google.com/spreadsheets/d/1doIvYn353RIXP06ysRYB2RBDTYJJsuAphBhq3ScDaWo/edit?gid=1095215594#gid=1095215594" target="_blank" title="google sheets"> 구글시트</a> / 
-        <a href="https://www.dropbox.com/home/%EB%93%9C%EB%A1%9C%EB%A7%88%EA%B0%9C%EB%B0%9C/04.%20%E8%AC%9B%E7%BE%A9%E7%B7%A8%E9%9B%86%E7%89%88_%EA%B0%95%EC%9D%98%ED%8E%B8%EC%A7%91%EB%B3%B8%EF%BC%88%E3%81%B2%E3%82%8D%E3%81%9B%20%E6%A7%98%EF%BC%89" target="_blank" title="dropbox link">드롭박스 </a>)</strong></h3></p>
-        <strong>01/14</strong>  최종 인코딩본
-    
-    <p style="margin-top: 30px;"><h3><strong>JDGE 
-        (<a href="https://docs.google.com/spreadsheets/d/1Ogr5CViEpMIRqTS2c9HPhk8YSEPLRaZ687Q6sCW9JRo/edit?gid=1520605804#gid=1520605804" target="_blank" title="google sheets"> 구글시트</a> / 
-        <a href="https://www.dropbox.com/scl/fo/jzaj0q5kfhcggm70gk4cv/AH_F78vQInmZnDG5LzK7HTc?rlkey=b8s3526h1f7thv5mnx0pd8s28&st=pzo6q2nc&dl=0" target="_blank" title="dropbox link">드롭박스 </a>)</strong></h3></p>
-        <strong>01/13</strong>  녹화본 업로드<br>
-        <strong>02/04</strong>  1차 납기<br>
-        <strong>02/11</strong>  최종 인코딩본<br>
+            <p style="margin-top: 30px;"><h3>히로세 
+            (<a href="https://docs.google.com/spreadsheets/d/1doIvYn353RIXP06ysRYB2RBDTYJJsuAphBhq3ScDaWo/edit?gid=1095215594#gid=1095215594" target="_blank" title="google sheets"> 구글시트</a> / 
+            <a href="https://www.dropbox.com/home/%EB%93%9C%EB%A1%9C%EB%A7%88%EA%B0%9C%EB%B0%9C/04.%20%E8%AC%9B%E7%BE%A9%E7%B7%A8%E9%9B%86%E7%89%88_%EA%B0%95%EC%9D%98%ED%8E%B8%EC%A7%91%EB%B3%B8%EF%BC%88%E3%81%B2%E3%82%8D%E3%81%9B%20%E6%A7%98%EF%BC%89" target="_blank" title="dropbox link">드롭박스 </a>)</strong></h3></p>
+            <strong>01/14</strong>  최종 인코딩본
+            
+            <p style="margin-top: 30px;"><h3>JDGE 
+                (<a href="https://docs.google.com/spreadsheets/d/1Ogr5CViEpMIRqTS2c9HPhk8YSEPLRaZ687Q6sCW9JRo/edit?gid=1520605804#gid=1520605804" target="_blank" title="google sheets"> 구글시트</a> / 
+            <a href="https://www.dropbox.com/scl/fo/jzaj0q5kfhcggm70gk4cv/AH_F78vQInmZnDG5LzK7HTc?rlkey=b8s3526h1f7thv5mnx0pd8s28&st=pzo6q2nc&dl=0" target="_blank" title="dropbox link">드롭박스 </a>)</strong></h3></p>
+            <strong>01/13</strong>  녹화본 업로드<br>
+            <strong>02/04</strong>  1차 납기<br>
+            <strong>02/11</strong>  최종 인코딩본<br>
+        </div>
+    </div>
 </body>
 </html>

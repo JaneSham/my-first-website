@@ -1,51 +1,73 @@
 <!DOCTYPE html> 
-<html>
+<html lan="ko">
 
 <head>
-    <title>Daily Quest</title>
     <meta charset=":utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaein's Wise Idle Life</title>
+    <style>
+        ol li 
+        {
+            line-height: 3; /* ol 리스트의 행간 설정 */
+        }
+        label
+        {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 
 <!-- 
     <!DOCTYPE html>, <html> : 이 문서 html이다! 이제 시작한다!
     <head> : 본문을 설명해주고 설정해주는 코드가 배치
-    <body> : 본문의 직접적인 내용이 해당
         <title> 을 사용하면 웹에서 표지와 같이 인식된다
-        utf-8 을 사용하면 한글이 깨지지 않게 표기할 수 있다
+        문자표기: utf-8 _ 한글이 깨지지 않게 표기할 수 있다
+        Meta Viewport로 설정 : 사용자 디바이스의 폭에 맞추고, 비율을 1대1로 설정함
+            필수 설정값이라고 함
  -->
 
 <body style="margin-left: 15px">
-    <h1><a href="index.html">한재인의 백수 생활</a></h1>
-    <ol>
-        <li><a href="time_table.html">생활 계획표</a></li>
-        <li><a href="work_edit.html">편집 업무</a></li>
-        <li><a href="daily_quest.html">일일 업무</a></li>
-    </ol> 
+    <a href="index.html" title="Jaein's Wise Idle Life"><img src="main_title.png"></a> 
+
+    <div style="display: flex;"> 
+        <!-- 좌측 카테고리 박스 관련 설정 -->
+        <div style="width: 150px; background-color: #e7e2db; padding: 10px; padding-top: 30px;">
+            <h3>카테고리</h3>
+            <ol style="list-style-type:none; padding: 0;">
+                <li><a href="time_table.html">생활 계획표</a></li>
+                <li><a href="work_edit.html">드로마 편집 업무</a></li>
+                <li><a href="daily_quest.html">일일 업무 체크리스트</a></li>
+            </ol> 
+        </div>
 
     <!-- 
         <li> 태그의 부모 태그는 <ul> 태그이며, 이는 리스트의 그룹을 구분한다
         부모 태그를 <ol> 로 지정시, 자동으로 넘버링이 붙는다
             ol : ordered list
             ul : unordered list
-        
-            오늘의 꿀팁 : cmd 를 누르고 여러곳을 클릭하면 동시에 내용을 입력할 수 있다
     -->
-
-    <h2>일일 업무</h2>
-
-    <img src="img_time_table.webp" width="330"><br>
-
-    <!-- 
-        <img> 태그 안에
-        src="" 이미지 파일명을 기입
-        width="" 숫자, 혹은 % 기입하여 이미지 크기 조절
-    -->
-
-    <br>
-    <h3><p>오늘의 할 일 (전날 작성)</p></h3>
-    <p style="margin-left: 5px;"> - 야스오카 문의/납기</p>
-    <p style="margin-left: 5px;"> - 히로세 7~9강 시트 업데이트 되면 편집</p>
-    <p style="margin-left: 5px;"> - 브이로그도 차차 진행 해둬야 함</p>
-    <p style="margin-left: 5px;"> - 생활코딩 인터넷&HTML > HTML 수강</p>
+        <!-- 우측 본문 박스 관련 설정 -->
+        <div style="flex:1; padding: 25px; padding-top: 10px;">
+            <h2 style="margin-top: 35px;">일일 업무 체크리스트</h2>
+            <img src="img_daily_quest.webp" width="250"><br>
+            <br>
+            <h3><p>오늘의 할 일 (전날 작성)</p></h3>
+                <label>
+                    <input type="checkbox"> 야스오카 문의/납기<br>
+                </label>
+                <label>
+                    <input type="checkbox"> 히로세 7~9강 시트 업데이트 되면 편집<br>
+                </label>
+                <label>
+                    <input type="checkbox"> 브이로그도 차차 진행 해둬야 함<br>
+                </label>
+                <label>
+                    <input type="checkbox"> 생활코딩 인터넷&HTML > HTML 수강<br>
+                </label>
+        </div>
+    </div>
 </body>
 </html>
